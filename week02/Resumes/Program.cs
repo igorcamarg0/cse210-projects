@@ -16,11 +16,18 @@ class Program
         job2._startYear = 2022;
         job2._endYear = 2023;
 
+        Job job3 = new Job();
+        job3._jobTitle = "Gerente";
+        job3._company = "Apple";
+        job3._startYear = 2023;
+        job3._endYear = 2024;
+
         Resume myResume = new Resume();
-        myResume._name = "Allison Rose";
+        myResume._name = "Igor Camargo";
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
+        myResume._jobs.Add(job3);
 
         myResume.Display();
     }
