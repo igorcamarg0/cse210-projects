@@ -179,3 +179,20 @@ namespace ProductOrderingSystem
         }
     }
 }
+
+// +---------------------+      +-----------------+
+// |     Order           |      |    Product      |
+// +---------------------+      +-----------------+
+// | - products          |      | - name          |
+// | - customer          |      | - productId     |
+// +---------------------+      | - price         |
+// | + AddProduct()      |      | - quantity      |
+// | + GetPackingLabel() |      | + GetTotalCost()|
+// | + GetShippingLabel()|      +-----------------+
+// +---------------------+     +------------------+
+//                  |          |     Customer     |
+//                  +----------| - name           |
+//                             | - address        |
+//                             +------------------+
+//                             | + LivesInUSA()   |
+//                             +------------------+
