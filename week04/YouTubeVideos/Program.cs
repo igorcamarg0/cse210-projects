@@ -94,3 +94,16 @@ namespace YouTubeVideoTracker
         }
     }
 }
+
+// +------------------+      +----------------+
+// |     Video        |      |    Comment     |
+// +------------------+      +----------------+
+// | - title          |      | - name         |
+// | - author         |      | - text         |
+// | - lengthInSeconds|      +----------------+
+// | - comments       |<---- | + GetName()    |
+// +------------------+      | + SetName()    |
+// | + GetTitle()     |      | + GetText()    |
+// | + SetTitle()     |      | + SetText()    |
+// | + AddComment()   |      +----------------+
+// +------------------+
